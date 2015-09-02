@@ -23,7 +23,7 @@ public class Variables {
 
     /*
     Blog : https://sites.google.com/a/unsm.edu.pe/curso-de-android-basico/
-    
+
     Tipo de datos
     ===========================
 

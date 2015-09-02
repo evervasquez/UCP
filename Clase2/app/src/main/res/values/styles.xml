@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="btn_facebook">
+        <item name="android:background">#db102b97</item>
+        <item name="android:textColor">#FFF</item>
+    </style>
+</resources>
