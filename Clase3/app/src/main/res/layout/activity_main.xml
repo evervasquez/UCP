@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:src="@android:drawable/ic_menu_camera"
+        android:layout_weight="1"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:layout_height="0dp">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/str_user"
+            />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_margin="10dp"
+            android:hint="@string/str_pass"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/str_session"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
