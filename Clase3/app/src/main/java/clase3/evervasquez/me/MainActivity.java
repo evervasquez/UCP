@@ -4,6 +4,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
+
+import clase3.evervasquez.me.herencia.Gato;
+import clase3.evervasquez.me.herencia.Perro;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,6 +15,35 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //cargar sqlite
+        //iniciar mapa
+
+        //creamos el objeto
+        Perro perro = new Perro();
+        Gato gato = new Gato();
+        Perro perro2 = new Perro();
+        Perro perro3 = new Perro();
+
+        //mensaje
+        Toast.makeText(this,"el animal gato esta "+gato.maulla(),Toast.LENGTH_LONG).show();
+
+    }
+
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
     }
 
     @Override
