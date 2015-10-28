@@ -15,17 +15,13 @@
  *  * limitations under the License.
  *
  */
-package t1lpoo.evervasquez.me.herencia;
+package t1lpoo.evervasquez.me.clases_abstractas.ejemplo1;
 
-public class Combi extends Vehiculo {
-    private int num_asientos = 12;
-    private int num_puertas = 4;
-    public String placa = "213123";
+public class Cuadrado extends Figura {
+    private double lado = 12;
 
     @Override
-    public String acelerar() {
-        return "Acelerando combi";
+    public double perimetro() {
+        return this.lado * 4;
     }
-
-
 }

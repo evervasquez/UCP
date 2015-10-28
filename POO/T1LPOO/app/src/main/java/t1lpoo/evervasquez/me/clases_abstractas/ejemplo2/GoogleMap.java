@@ -15,17 +15,18 @@
  *  * limitations under the License.
  *
  */
-package t1lpoo.evervasquez.me.herencia;
+package t1lpoo.evervasquez.me.clases_abstractas.ejemplo2;
 
-public class Combi extends Vehiculo {
-    private int num_asientos = 12;
-    private int num_puertas = 4;
-    public String placa = "213123";
+public abstract class GoogleMap {
 
-    @Override
-    public String acelerar() {
-        return "Acelerando combi";
+    // es la ubicación del mapa
+    public abstract String getCoordenadas();
+
+    // el metodo que crea el mapa de acuerdo a la ubicación
+    public String CrearMapa()
+    {
+        return "El mapa esta siendo creado en las coordenadas de "
+                + this.getCoordenadas();
     }
-
 
 }

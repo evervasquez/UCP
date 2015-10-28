@@ -17,15 +17,6 @@
  */
 package t1lpoo.evervasquez.me.herencia;
 
-public class Combi extends Vehiculo {
-    private int num_asientos = 12;
-    private int num_puertas = 4;
-    public String placa = "213123";
-
-    @Override
-    public String acelerar() {
-        return "Acelerando combi";
-    }
-
+public class Auto extends Vehiculo{
 
 }

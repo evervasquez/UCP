@@ -21,12 +21,48 @@ package t1lpoo.evervasquez.me.herencia;
     SuperClass Vehiculo
  */
 public class Vehiculo {
+
     public String linea;
+
     public String color;
+
     public String marca;
-    public String modelo;
+
+    private String modelo;
+
     protected String placa = "A32-122";
 
+    public String getLinea() {
+        return linea;
+    }
+
+    public void setLinea(String linea) {
+        this.linea = linea;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
 
     public String encender() {
         return "Encendiendo vehiculo";
@@ -44,7 +80,7 @@ public class Vehiculo {
         return "Retrocediendo vehiculo";
     }
 
-    public String apagar() {
+    public String apaga() {
         return "Apagando vehiculo";
     }
 }

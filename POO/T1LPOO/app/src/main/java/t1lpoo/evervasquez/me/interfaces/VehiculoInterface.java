@@ -15,17 +15,16 @@
  *  * limitations under the License.
  *
  */
-package t1lpoo.evervasquez.me.herencia;
+package t1lpoo.evervasquez.me.interfaces;
 
-public class Combi extends Vehiculo {
-    private int num_asientos = 12;
-    private int num_puertas = 4;
-    public String placa = "213123";
+public interface VehiculoInterface {
 
-    @Override
-    public String acelerar() {
-        return "Acelerando combi";
-    }
+    String encender();
 
+    String frenar();
+
+    String acelerar();
+
+    String retroceder();
 
 }
