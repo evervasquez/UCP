@@ -20,7 +20,6 @@ import evervasquez.me.noloop.NoAbstract.Perro;
 public class MainActivity extends AppCompatActivity {
 
     private Perro perro;
-    private InterfaceAddress interfaceAddress
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
