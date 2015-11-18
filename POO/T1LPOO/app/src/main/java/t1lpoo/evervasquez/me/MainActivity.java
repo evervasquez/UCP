@@ -3,17 +3,21 @@ package t1lpoo.evervasquez.me;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.widget.Toast;
 
 import t1lpoo.evervasquez.me.clases_abstractas.ejemplo1.Cuadrado;
 import t1lpoo.evervasquez.me.clases_abstractas.ejemplo1.Triangulo;
 import t1lpoo.evervasquez.me.clases_abstractas.ejemplo2.MapaSatelital;
+import t1lpoo.evervasquez.me.encapsulamiento.Ucp;
 import t1lpoo.evervasquez.me.herencia.Auto;
 import t1lpoo.evervasquez.me.herencia.Combi;
 import t1lpoo.evervasquez.me.interfaces.Furgon;
 import t1lpoo.evervasquez.me.interfaces.Vehiculo;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+    private Ucp ucp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +41,11 @@ public class MainActivity extends AppCompatActivity {
         Log.v("Moto - Interface", vehiculo.retroceder());
 
         Toast.makeText(this, "Hello Word", Toast.LENGTH_LONG).show();
+
+        //encapsulamiento
+        ucp = new Ucp("5to", 380);
+        ucp.setCiclo("7mo");
+        Log.v("Ciclo", ucp.getCiclo());
     }
 
     @Override
@@ -67,5 +76,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
         Log.v("onStop", "onStop");
+    }
+
+    @Override
+    public void onClick(View view) {
+
     }
 }
